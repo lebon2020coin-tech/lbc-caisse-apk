@@ -1,0 +1,19 @@
+FABRIQUER L'APK SANS INSTALLER AUCUN LOGICIEL (via GitHub, gratuit)
+===================================================================
+1. Creez un compte gratuit sur github.com (adresse e-mail + mot de passe).
+2. Cliquez sur "+" (en haut a droite) > "New repository". Nom : lbc-caisse-android. Laissez "Public"
+   ou "Private" (les deux marchent). Cliquez "Create repository".
+3. Sur la page du depot : cliquez "uploading an existing file".
+4. Dezippez ce zip, ouvrez le dossier, selectionnez TOUT son contenu (settings.gradle, build.gradle,
+   gradle.properties, dossiers app et gradle, ET le dossier .github) et glissez-le dans la page.
+   Si le dossier .github n'est pas visible : Explorateur > Affichage > cochez "Elements masques".
+5. Cliquez "Commit changes" (bouton vert en bas).
+6. Onglet "Actions" (en haut) : la fabrication demarre toute seule (pastille jaune, 3 a 6 minutes).
+   Si on vous demande d'activer les workflows, cliquez "I understand... enable".
+7. Quand la pastille devient VERTE : cliquez sur la ligne "Fabriquer APK", descendez a "Artifacts",
+   cliquez "LBC-Caisse-APK" : un zip se telecharge, il contient app-debug.apk.
+8. Copiez app-debug.apk sur la tablette, ouvrez-le, autorisez "installer des applications inconnues".
+   Au 1er lancement, tapez l'adresse du serveur, ex. http://192.168.1.10:8765
+   (appui long sur Volume+ pour la changer plus tard).
+
+Si la pastille est ROUGE : cliquez dessus, copiez la ligne d'erreur en rouge et envoyez-la.
